@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+
+#week td:nth-child(1),
+#week td:nth-child(2),
+#month td:nth-child(1),
+#month td:nth-child(2) {
+	width: 1em;
+	text-align: right;
+}
+
+#alphabet td:nth-child(1),
+#alphabet td:nth-child(2),
+#alphabet td:nth-child(5),
+#alphabet td:nth-child(6) {
+	width: 1em;
+	text-align: right;
+}
