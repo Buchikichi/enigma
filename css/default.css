@@ -15,3 +15,7 @@
 	width: 1em;
 	text-align: right;
 }
+
+#square3x3, #square5x5 {
+	text-align: center;
+}
