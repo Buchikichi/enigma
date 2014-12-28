@@ -1,5 +1,8 @@
 @CHARSET "UTF-8";
 
+#season td:nth-child(1),
+#season td:nth-child(2),
+#season td:nth-child(3),
 #week td:nth-child(1),
 #week td:nth-child(2),
 #month td:nth-child(1),
