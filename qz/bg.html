@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>BG</title>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/humanity/jquery-ui.css"/>
+<link rel="stylesheet" href="./css/default.css"/>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="./js/bg.js"></script>
+</head>
+
+<body>
+<form id="mainForm">
+<div id="tabs">
+	<ul>
+		<li><a href="#playTab">Play</a></li>
+		<li><a href="#categoryTab">Category</a></li>
+		<li><a href="#questionTab">Question</a></li>
+		<li><a href="#authTab">Auth</a></li>
+	</ul>
+	<div>
+		ticket:<input type="text" name="ticket"/>
+		Category:<span id="catName"></span><input type="hidden" name="catID"/>
+	</div>
+	<div id="playTab">
+		<input type="hidden" name="qID"/>
+		<input type="hidden" name="seq"/>
+		<input type="text" name="numOfQuestion" value="10" size="2"/>
+		<input id="beginBtn" type="button" value="Begin"/>
+		<div id="questionText" class="ui-widget-content" style="display:none;"></div>
+		<div id="answers"><ol></ol></div>
+		<input id="judgmentBtn" type="button" value="Judge" style="display:none;"/>
+		<div id="judgment"></div>
+		<input id="nextBtn" type="button" value="Next"/>
+	</div>
+	<div id="categoryTab">
+		<input type="text" name="category"/>
+		<input id="catCreateBtn" type="button" value="Create" class="create"/>
+		<input type="button" value="Update" class="update"/>
+		<br/>
+		<input id="catListBtn" type="button" value="List"/>
+	</div>
+	<div id="questionTab">
+		<input id="questionUpdateBtn" type="button" value="Update" class="update"/>
+	</div>
+	<div id="authTab">
+		user:<input id="user" type="text" name="user"/>
+		<br/>
+		pass:<input id="pass" type="text" name="pass" value=""/>
+		<br/>
+		<input id="authenticateBtn" type="button" value="Authenticate"/>
+	</div>
+</div>
+</form>
+<div id="result">
+	<table id="resultTable" class="resultList" style="display:none;"></table>
+	<span id="resultIcon" class="ui-icon ui-icon-triangle-1-e"></span>
+	<textarea id="resultText" style="display:none;"></textarea>
+</div>
+<hr/>
+local:
+<a href="http://localhost/phpmyadmin/" target="_blank">phpMyAdmin</a>
+<br/>
+<a href="http://php.net/manual/ja/" target="_blank">php</a>
+<a href="http://api.jquery.com/" target="_blank">jQuery</a>
+<a href="http://api.jqueryui.com/" target="_blank">UI</a>
+<a href="http://urin.github.io/jquery.balloon.js/" target="_blank">balloon.js</a>
+</body>
+</html>

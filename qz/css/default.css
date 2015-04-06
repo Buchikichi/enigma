@@ -1,0 +1,133 @@
+@CHARSET "UTF-8";
+
+body {
+	background-color: #FFFFFF;
+}
+
+.numeric {
+	text-align: right;
+}
+
+/*
+ * span
+ */
+span.mistake {
+	color: #a04040;
+}
+
+/*
+ * div
+ */
+div.detail {
+	font-size: medium;
+	background-color: #f0fff0;
+}
+#questionText {
+	color: black;
+	border: 1px black dashed;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+#judgment {
+	font-size: x-large;
+	font-weight: bold;
+	background-color: #FFF0F0;
+}
+/*
+ * UI
+ */
+#tabs .ui-tabs-panel {
+	padding: 0px;
+}
+span.ui-icon {
+	cursor: pointer;
+}
+/*
+ * table
+ */
+#resultTable {
+	border-collapse: collapse;
+}
+#resultTable tr:nth-child(even) {
+	background-color: #F8F8F8;
+}
+#resultTable tr:nth-child(odd) {
+	background-color: #F0F0F0;
+}
+#resultTable th {
+	padding: 2px;
+	border: 1px black solid;
+	background-color: #E0E0FF;
+}
+#resultTable td {
+	padding: 2px;
+	border: 1px black solid;
+}
+#progress td {
+	width: 20px;
+	font-size: xx-small;
+	color: #606060;
+	background-color: #F0F0F0;
+}
+#progress td.rightAnswer {
+	color: #e0e0e0;
+	background-color: #8080FF;
+}
+#progress td.incorrect {
+	color: #e0e0e0;
+	background-color: #FF8080;
+}
+
+/*
+ * answer
+ */
+#answers ol {
+	list-style-type: none; margin: 0; padding: 0; width: auto; }
+#answers li {
+	font-size: large;
+	margin: 4px;
+	padding: 0.4em;
+	background-color: #e0e0e0;
+	border: 1px transparent solid;
+	cursor: pointer;
+}
+#answers li:HOVER {
+	border: 1px black dotted;
+}
+#answers .ui-selecting {
+	background: #FECA40;
+}
+#answers .ui-selected {
+	color: white;
+	background: #F39814;
+}
+#answers input[type=text] {
+	font-size: larger;
+	width: 100%;
+}
+
+/*
+ * controls
+ */
+input[name=ticket] {
+	width: 320px;
+}
+input.create {
+	background-color: aqua;
+}
+input.update {
+	background-color: lime;
+}
+select[name=catID] {
+	width: 200px;
+}
+select[name=numOfQuestion] {
+	width: 80px;
+}
+input[name=ratio] {
+	width: 100px;
+	color: #606060;
+	border-color: transparent;
+}

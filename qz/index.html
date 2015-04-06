@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>QZ</title>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="./css/default.css"/>
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="./js/jquery.balloon.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+</head>
+
+<body>
+<form id="mainForm">
+	<input type="hidden" name="ticket"/>
+    <div class="ui-grid-b">
+      <div class="ui-block-a"><select name="catID"></select></div>
+      <div class="ui-block-b"><select name="numOfQuestion"></select></div>
+      <div class="ui-block-c"><button id="beginBtn" type="button" class="ui-shadow ui-btn ui-corner-all ui-btn-icon-right ui-icon-power">Begin</button></div>
+    </div>
+	<div id="game" style="display:none;">
+		<input type="range" name="index" min="1" max="100" value="1"/>
+		<table>
+			<tr>
+				<td>
+					<table id="progress"></table>
+				</td>
+			</tr>
+		</table>
+		<input type="hidden" name="qID"/>
+		<input type="hidden" name="seq"/>
+		<div id="questionText" class="ui-widget-content" style="display:none;"></div>
+		<div id="answers">
+		    <fieldset data-role="controlgroup"></fieldset>
+			<input type="text" name="description"/>
+		</div>
+	    <div class="ui-grid-a">
+	      <div class="ui-block-a"><button id="judgmentBtn" type="button" class="ui-shadow ui-btn ui-corner-all ui-btn-icon-right ui-icon-action">Judge</button></div>
+	      <div class="ui-block-b"><button id="nextBtn" type="button" class="ui-shadow ui-btn ui-corner-all ui-btn-icon-right ui-icon-forward">Next</button></div>
+	    </div>
+		<div id="judgment"></div>
+		<input type="text" name="ratio"/>
+	</div>
+</form>
+<div id="result" data-role="collapsible" data-mini="true">
+	<h4>debug</h4>
+	<textarea id="resultText"></textarea>
+</div>
+</body>
+</html>
