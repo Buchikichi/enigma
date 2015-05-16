@@ -52,6 +52,7 @@ CREATE TABLE IF NOT EXISTS `category` (
 
 INSERT INTO `category` (`catID`, `catName`) VALUES
 ('049380cc-1651-11e4-ab60-002590573965', 'Beer'),
+('9d3d267e-fb80-11e4-8ad9-525400023227', 'Estate'),
 ('0e9b8ff6-1651-11e4-ab60-002590573965', 'Java'),
 ('621eaa5b-1b94-11e4-92ae-000c29aa226f', 'Linux');
 
