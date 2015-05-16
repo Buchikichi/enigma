@@ -124,7 +124,7 @@ function judgment(msg) {
 }
 function convertQuestion(question) {
 	var result = question;
-	var words = ['誤っている', '適切でない'];
+	var words = ['誤っている', '適切でない', '不適当', '該当しない'];
 	$(words).each(function(ix, word) {
 		result = result.replace(word, '<span class="mistake">' + word + '</span>');
 	});
