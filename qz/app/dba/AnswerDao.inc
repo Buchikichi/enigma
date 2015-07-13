@@ -38,7 +38,7 @@ EOD;
 		$param = array('qID'=>$qID);
 		$query = <<<EOD
 SELECT
-  md5(qID + seq) seq,
+  md5(concat(qID, seq)) seq,
   content
 FROM
   answer
@@ -56,7 +56,7 @@ EOD;
 		$param = array('qID'=>$qID);
 		$query = <<<EOD
 SELECT
-  md5(qID + seq) seq,
+  md5(concat(qID, seq)) seq,
   content
 FROM
   answer
