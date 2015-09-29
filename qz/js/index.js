@@ -120,7 +120,7 @@ function judgment(msg) {
 
 	judgment.hide();
 	judgment.text(msg);
-	judgment.show();
+	judgment.slideDown();
 }
 function convertQuestion(question) {
 	var result = question;
